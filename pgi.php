@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2016 Ezio Tarquilio -->
+
 <?php
 class Gallery {
 	public $src = array();
