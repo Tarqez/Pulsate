@@ -20,7 +20,7 @@ Develop the plug-in considering at your disposal the php arrays _$myImages->src,
         echo "<img src='{$myImages->src[$i]}' alt='{$myImages->caption[$i]}'>"
     }
 ## Features
-* __filter__ all __non png, jpeg, gif__ image files uploaded in the gallery folder
+* __filters__ all __non png, jpeg, gif__ image files uploaded in the gallery folder
 * __arrays are sorted__ according to the drag & drop image sorting feature of Pulse
-* __add to the end of arrays__ uploaded and not ordered images
+* __adds to the end of arrays__ uploaded and not ordered images
 * $myImages->src array __provides full path__ to images, no path-prefix needed
