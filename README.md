@@ -1,11 +1,11 @@
 # Pulse photo interface
-Easly create a gallery plug-in based on Pulse Photo functionality (back-end uploading, re-sorting and captioning) with this interface that provides php sorted arrays of photos and captions.
+Easly create a gallery plug-in based on _Pulse Photo functionality (back-end uploading, re-sorting and captioning)_ with this interface that provides php sorted arrays of photos and captions.
 
 Save time, keep code clean and personalize your gallery focusing only on the html/css/js part.
 
 ![Inteface stack position](http://tarqez.github.io/pulse-photo-interface/pgi.jpg)
 ## Usage
-Drop _pupin.php_ in _inc/plugins_ folder of your Pulse installation directory and include it in your gallery plug-in script
+Drop _pupin.php_ in _inc/plugins_ folder of your Pulse installation directory and include it in your gallery plug-in php script
 
     require './inc/plugins/pupin.php';  
 
@@ -13,7 +13,7 @@ Instantiate the class
 
     $myImages = new Gallery($tag_var1, $path);
 
-Use at your disposal the sorted arrays _$myImages->src, $myImages->caption_. A suggestion can help
+Develop the plug-in considering at your disposal the php arrays _$myImages->src, $myImages->caption_. A suggestion can help
 
     $n = count($myImages->src);
     for ($i=0; $i < $n; $i++) {
