@@ -1,7 +1,7 @@
 # Pulse photo interface
 Easly create a gallery plug-in based on _Pulse Photo functionality (back-end uploading, re-sorting and captioning)_ with this interface that provides php sorted arrays of photos and captions.
 
-Save time, keep code clean and personalize your gallery focusing only on the html/css/js part.
+Save time, keep code clean and personalize your gallery focusing mostly on the html/css/js part.
 
 ![Inteface stack position](http://tarqez.github.io/pulse-photo-interface/pgi.jpg)
 ## Usage
