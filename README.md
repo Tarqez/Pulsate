@@ -1,26 +1,24 @@
-# Pulse photo interface
-Easly create a gallery plug-in based on _Pulse Photo functionality (back-end uploading, re-sorting and captioning)_ with this interface that provides php sorted arrays of photos and captions.
+# Pulsate
 
-Save time, keep code clean and personalize your gallery focusing mostly on the html/css/js part.
+Empower [Pulse CMS](https://pulsecms.com) with this simple PHP interface that gives you direct access to images of a gallery when creating a new custom tag.
 
-![Inteface stack position](http://tarqez.github.io/pulsate/interface.jpg)
-## Usage
-Drop _pupin.php_ in _inc/plugins_ folder of your Pulse installation directory and include it in your gallery plug-in php script
+Drop __pulsate.php__ file inside __inc/plugins__ folder of your installation directory, afterward start writing your custom tag plug-in with these two lines of code to get access to ordered arrays of images and captions.
 
-    require './inc/plugins/pupin.php';  
-
-Instantiate the class
-
+    require_once './inc/plugins/pupin.php';  
     $myImages = new Gallery($tag_var1, $path);
+    
+    // later in your plug-in code, make use of the arrays
+    // $myImages->src
+    // $myImages->caption
 
-Develop the plug-in considering at your disposal the php arrays _$myImages->src, $myImages->caption_. A suggestion can help
+Easily create your plug-in focusing mostly on the _HTML/CSS/js_ part. Save time, keep code clean and make beautiful your gallery thanks to Pulsate interface.
 
-    $n = count($myImages->src);
-    for ($i=0; $i < $n; $i++) {
-        echo "<img src='{$myImages->src[$i]}' alt='{$myImages->caption[$i]}'>"
-    }
+Once your tag is ready, use the Pulse Admin panel to name the gallery and manage its images such as uploading, re-sorting and captioning them, later put that name in the custom tag.
+
+Take a look at what [plug-ins](www.pulsate.eu/plugins) you can realize.
+
 ## Features
-* __filters__ all __non png, jpeg, gif__ image files uploaded in the gallery folder
-* __arrays are sorted__ according to the drag & drop image sorting feature of Pulse
-* __adds to the end of arrays__ uploaded and not ordered images
-* $myImages->src array __provides full path__ to images, no path-prefix needed
+* filters out **non-** png, jpeg and gif files contained in the gallery folder
+* sorts arrays according to the order given to the gallery
+* adds to the array end images uploaded and not sorted
+* **$myImages->src** array provides a full path to images, no path-prefix needed
