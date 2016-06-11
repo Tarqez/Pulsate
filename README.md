@@ -3,7 +3,7 @@ Easly create a gallery plug-in based on _Pulse Photo functionality (back-end upl
 
 Save time, keep code clean and personalize your gallery focusing mostly on the html/css/js part.
 
-![Inteface stack position](http://tarqez.github.io/pulse-photo-interface/pgi.jpg)
+![Inteface stack position](http://tarqez.github.io/pulsate/interface.jpg)
 ## Usage
 Drop _pupin.php_ in _inc/plugins_ folder of your Pulse installation directory and include it in your gallery plug-in php script
 
