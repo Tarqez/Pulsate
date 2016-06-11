@@ -15,7 +15,7 @@ Easily create your plug-in focusing mostly on the _HTML/CSS/js_ part. Save time,
 
 Once your tag is ready, use the Pulse Admin panel to name the gallery and manage its images such as uploading, re-sorting and captioning them, later put that name in the custom tag.
 
-Take a look at what [plug-ins](www.pulsate.eu/plugins) you can realize.
+Take a look at what [plug-ins](http://www.pulsate.eu/plugins) you can realize.
 
 ## Features
 * filters out **non-** png, jpeg and gif files contained in the gallery folder
